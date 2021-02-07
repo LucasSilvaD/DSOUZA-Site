@@ -1,0 +1,115 @@
+/* Import CSS */
+@import url('style.css');
+
+/* Imagem principal */
+
+#image-bg-about {
+	width: 98.5%;
+	height: 89.4vh;
+	background: url(../img/imagem-bg-about.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+
+#banner-principal .barra_lateral {
+	display: inline-block;
+	margin-right: -8px;
+	width: 1.5%;
+	height: 80vh;
+	margin-bottom: 4.1vh;
+}
+
+.texto-principal {
+	position: absolute;
+	top: 80%;
+	right: 5%;
+	transform: translate(-5%, -80%);
+	text-align: right;
+}
+
+/* Seção Sobre Nós */
+
+#about {
+	width: 70%;
+	height: auto;
+	margin: 125px auto 175px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.imgs-about {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-sobre {
+	height: 70vh;
+}
+
+#about .img-sobre-barra-lateral {
+	height: 60vh;
+}
+
+#about .text-about {
+	margin-left: 50px;
+}
+
+#about .text-about h2, p {
+	color: var(--paynes-grey);
+}
+
+/* Responsividade Mobile / Tablet*/
+
+@media (max-width: 991px) {
+	#image-bg-about {
+		width: 94%;
+		background: url(../img/imagem-bg-about-mobile.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#banner-principal .barra_lateral {
+		display: inline-block;
+		margin-left: -8px;
+		width: 6%;
+		height: 80vh;
+		margin-top: 4.1vh;
+	}
+
+	#about {
+		width: 100%;
+		margin: 150px auto;
+		display: block;
+	}
+
+	#about .img-sobre-barra-lateral {
+		margin: 0 -5px 0 0;
+		height: 60vh;
+		width: 4%;
+	}
+
+	.img-sobre {
+		width: 75%;
+		max-width: 300px;
+		height: 70vh;
+	}
+
+	#about .text-about {
+		margin: 15px 0;
+	}
+
+	.text-about h2 {
+		text-align: center;
+	}
+
+	.text-about p {
+		width: 85%;
+		margin: 0 auto;
+	}
+}

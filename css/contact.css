@@ -1,0 +1,108 @@
+/* Import CSS */
+@import url('style.css');
+@import url('services.css');
+
+.title-centralizado {
+	text-align: center;
+}
+
+/* Seção Contato */
+
+#contact {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 100px 0;
+}
+
+#contact .text-contact {
+	margin-right: 75px;
+	color: var(--paynes-grey);
+}
+
+#contact .text-contact a {
+	color: var(--paynes-grey);
+}
+
+/* Fórmulário de Contato */
+
+#form-contact input, textarea {
+	width: 445px;
+	border: 1px solid #B7B7B7;
+	border-radius: 5px;
+	color: var(--charcoal);
+	padding: 10px 5px;
+	margin: 10px 0;
+	outline-color: var(--light-grey);
+	resize: none;
+}
+
+#form-contact input:first-of-type {
+	margin-top: 0;
+}
+
+#form-contact input::placeholder  { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--charcoal);
+  opacity: 1; /* Firefox */
+}
+
+#form-contact input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--charcoal);
+}
+
+#form-contact input::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--charcoal);
+}
+
+#form-contact textarea::-webkit-input-placeholder {
+  color: var(--charcoal);
+}
+
+#form-contact textarea:-moz-placeholder { /* Firefox 18- */
+  color: var(--charcoal);  
+}
+
+#form-contact textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--charcoal);  
+}
+
+#form-contact textarea:-ms-input-placeholder {
+  color: var(--charcoal); 
+}
+
+#form-contact textarea::placeholder {
+  color: var(--charcoal);  
+}
+
+#form-contact .btn {
+	float: right;
+}
+
+/* Responsividade Mobile / Tablet */
+
+@media (max-width: 991px) {
+	#form-contact input:first-of-type {
+		margin-top: 50px;
+	}
+
+	#contact {
+		width: 95%;
+		display: block;
+		margin: 100px auto;
+	}
+
+	#contact .text-contact {
+		margin: 0;
+	}
+
+	#form-contact input, textarea {
+		width: 95%;
+	}
+
+	#form-contact .btn {
+		float: right;
+		margin-right: 5%;
+	}
+}

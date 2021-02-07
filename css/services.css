@@ -1,0 +1,54 @@
+/* Import CSS */
+@import url('style.css');
+
+header {
+	padding: 0 30px;
+}
+
+.title {
+	margin-top: 50px;
+}
+
+/* Card Serviços */
+
+.service-card div {
+	width: 75%;
+	height: auto;
+	margin: 100px auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.text-card-service {
+	text-align: left;
+	color: var(--paynes-grey);
+	margin-left: 100px; 
+}
+
+.text-card-service p {
+	color: var(--paynes-grey);
+}
+
+/* Responsividade Mobile / Tablet */
+
+@media (max-width: 991px) {
+	.service-card div {
+		flex-wrap: wrap;
+		margin: 150px auto;
+		width: 85%
+	}
+
+	.service-card div img {
+		width: 95%;
+	}
+
+	.text-card-service {
+		margin-left: 0;
+	}
+
+	.text-card-service h3 {
+		margin-top: 15px;
+		text-align: center;
+	}
+}
